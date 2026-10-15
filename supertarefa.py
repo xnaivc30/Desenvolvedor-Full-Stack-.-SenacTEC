@@ -958,7 +958,7 @@ for num in range(inicio, fim + 1):
 print()
 
 '''
-#exercicio do davi pq nao entendi absolutamente nada do que o gestor explicou
+#exercicio do davi pq nao entendi absolutamente nada do que o gestor explicou                  
 
 
 #Bloco 5
@@ -1305,8 +1305,9 @@ print(a2)
 '''
 
 a1 = []
+
 for i in range(5):
-    a2 = int(input("Digite a nota: ))
+    a2 = int(input("Type in the grade: ))
     a1.append(a2)
     a3 = sum(a1) / 5
 
@@ -1318,7 +1319,15 @@ print(a3)
 
 '''
 
+a1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
+a2 = []
+
+for a3 in a1:
+    if (a3 % 2 == 0):
+        a2.append(a3)
+
+print(a2)
 
 '''
 
@@ -1326,7 +1335,18 @@ print(a3)
 
 '''
 
+a1 = ["Antonella", "Raphael", "Matias", "Johnny", "Ghost"]
 
+a2 = input("Type in a name to remove: ")
+
+if (a2 in a1):
+
+    a1.remove(a2)
+    print("Updated list: " ,a1)
+
+else:
+
+    print("That name isn't in the list.")
 
 '''
 
@@ -1334,7 +1354,19 @@ print(a3)
 
 '''
 
+a1 = []
 
+for i in range(5):
+    a2 = input("Type in the item: ")
+    a1.append(a2)
+
+a3 = input("Search for an item: ")
+
+if (a3 in a1):
+    print("Item registered.")
+
+else:
+    print("Item not found.")
 
 '''
 
@@ -1342,6 +1374,20 @@ print(a3)
 
 '''
 
+a1 = []
+
+for i in range(6):
+
+    numero = int(input("Input six numbers: "))
+    a1.append(numero)
+
+a1.sort()
+
+print("Ascending order" ,a1)
+
+a1.sort(reverse = True)
+
+print("Descending order:" ,a1)
 
 
 '''
@@ -1350,7 +1396,15 @@ print(a3)
 
 '''
 
+a1 = []
 
+for i in range(10):
+    a2 = int(input("Input a number: "))
+    a1.append(a2)
+
+a3 = set(a1)
+
+print(a3)
 
 '''
 
@@ -1358,7 +1412,12 @@ print(a3)
 
 '''
 
+a1 = {1, 2, 3, 10, 13, 33, 44, 67}
+a2 = {3, 5, 6, 7, 12, 13, 54, 67}
 
+a3 = a1 & a2
+
+print(sorted(a3))
 
 '''
 
@@ -1366,7 +1425,9 @@ print(a3)
 
 '''
 
-
+a1 = (20 , 80)
+print("X's value equals: ", a1[0])
+print("Y's value equals: ", a1[1])
 
 '''
 
@@ -1374,7 +1435,13 @@ print(a3)
 
 '''
 
+a1 = {
+    "Name": "Peter Parker",
+    "Age": 21,
+    "City": "New York"
+}
 
+print("My name is ", a1["Name"], ", I live in ", a1["City"]," and I am ",a1["Age"],"years old.")
 
 '''
 
@@ -1382,7 +1449,22 @@ print(a3)
 
 '''
 
+a1 = []
 
+a2 = input("Input your name: ")
+
+for i in range(2):
+    a3 = int(input("Type in your grade: "))
+    a1.append(a3)
+
+a2 = {
+    "Name": a2,
+    "Grade": a1
+}
+
+a2["Average"] = (a1[0] + a1[1]) / 2
+
+print(a2)
 
 '''
 
@@ -1390,14 +1472,47 @@ print(a3)
 
 '''
 
+a1 = []
 
+a2 = {
+    "Name": "Sumfin", "Price": "9,99",
+}
+a1.append(a2)
+
+
+a3 = {
+    "Name": "Thing", "Price": "69,99",
+}
+a1.append(a3)
+
+
+a4 = {
+    "Name": "Thinnng", "Price": "60,99",
+}
+a1.append(a4)
+
+
+print(a1)
 
 '''
 
 #tarefa97
 
 '''
+a1 = 0
+a2 = [
+    {"Name": "Thing", "Price": 60.99},
+    {"Name": "Uhhh", "Price": 9.99},
+    {"Name": "Sumfin", "Price": 99.99},
+]
 
+for i in a2:
+
+    if i["Price"] > a1:
+    
+        a1 = i["Price"]
+
+print(a1)
 
 
 '''
@@ -1407,6 +1522,32 @@ print(a3)
 '''
 
 
+a1 = [
+    {"Anthony": 34996695900},
+    {"PeterParker": 34997822680},
+    {"Luke": 34991292027}
+]
+
+a2 = input("Whose number do you want?: ")
+
+have = False
+
+
+for i in a1:
+
+    if a2 in i:
+        print(i[a2])
+        have = True
+        break
+        
+    else:
+        have = False
+
+
+        
+if (have == False):
+    print("System doesn't have that number.")
+
 
 '''
 
@@ -1414,7 +1555,7 @@ print(a3)
 
 '''
 
-
+#AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA parei aqui
 
 '''
 
@@ -1716,3 +1857,9 @@ print(a3)
 '''
 
 
+
+
+
+
+#Produtos Raphael, Mochila, Caderno
+#Preços   99,99 69,99 59,99
