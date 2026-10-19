@@ -1,3 +1,62 @@
+#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# oi, o jogo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #tarefa1
 
 '''
@@ -1555,7 +1614,17 @@ if (have == False):
 
 '''
 
-#AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA parei aqui
+a1 = {}
+
+a2 = input("Type in a sentence: ")
+a3 = a2.lower()
+
+a4 = a3.split()
+a5 = set(a4)
+
+for a6 in a5:
+    a1[a6] = a4.count(a6)
+print(a1)
 
 '''
 
@@ -1563,10 +1632,42 @@ if (have == False):
 
 '''
 
+a1 = [
+    {"Avocados": 10},
+    {"Pineapple": 16},
+    {"Banana": 15}
+]
+
+a2 = input("Type in a fruit: ").lower()
+
+a3 = int(input("TYpe in a quantity to withdraw: "))
+
+a4 = False
+
+for a5 in a1:
+
+    if a2 in a5:
+    
+        a4 = True
+
+        if a3 <= 0:
+            print("The quantity should be positive.")
+
+        elif a3 > a5[a2]:
+            print("There's not enough to withdraw.")
+
+        else:
+            a5[a2] -= a3
+            print("Item withdrawn.")
+            print("This is what's left:", a5[a2])
+
+        break
+
+if a4 == False:
+    print("That item isn't registered.")
 
 
 '''
-
 
 #Bloco 7
 
@@ -1574,7 +1675,10 @@ if (have == False):
 
 '''
 
+def a1():
+    print("Welcome!")
 
+a1()
 
 '''
 
@@ -1582,7 +1686,12 @@ if (have == False):
 
 '''
 
+def a1(a3):
+    print("Hello,", a3,"!")
 
+a2 = input("Type in your name: ") 
+
+a1(a2)
 
 '''
 
@@ -1590,7 +1699,15 @@ if (have == False):
 
 '''
 
+a1 = int(input("Type in a number: "))
+a2 = int(input("Type in another number: "))
 
+def a3 (a1 , a2):
+    return a1 + a2
+
+a4 = a3 (a1 , a2) 
+
+print("The result is ", a4)
 
 '''
 
@@ -1598,7 +1715,7 @@ if (have == False):
 
 '''
 
-
+#AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 
 '''
 
